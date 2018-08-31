@@ -12,9 +12,44 @@
 		D8C39C3C212EAA69004E6691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C39C3A212EAA69004E6691 /* Main.storyboard */; };
 		D8C39C3E212EAA6A004E6691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C39C3D212EAA6A004E6691 /* Assets.xcassets */; };
 		D8C39C41212EAA6A004E6691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C39C3F212EAA6A004E6691 /* LaunchScreen.storyboard */; };
+		D8C39C4F212EAA88004E6691 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C39C4E212EAA88004E6691 /* KeyboardViewController.swift */; };
+		D8C39C53212EAA88004E6691 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D8C39C4C212EAA88004E6691 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D8C39C59212EB02B004E6691 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C39C58212EB02B004E6691 /* KeyCell.swift */; };
+		D8C39C5B212EB04E004E6691 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C39C5A212EB04E004E6691 /* UIView+Layout.swift */; };
+		D8C39C5D212EB9DE004E6691 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C39C5C212EB9DE004E6691 /* LeftAlignedCollectionViewFlowLayout.swift */; };
+		EEC8CB53C0250C16372984B7 /* Pods_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F1D6431CB25B5313BC86F1 /* Pods_Keyboard.framework */; };
+		EF5789AD1765AEED63F13F23 /* Pods_Lazyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 976A58AEFF9AF8CCD79D55A5 /* Pods_Lazyboard.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D8C39C51212EAA88004E6691 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C39C2B212EAA69004E6691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8C39C4B212EAA88004E6691;
+			remoteInfo = Keyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8C39C57212EAA88004E6691 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D8C39C53212EAA88004E6691 /* Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		953F7E2194C4D273C5D54163 /* Pods-Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.release.xcconfig"; sourceTree = "<group>"; };
+		976A58AEFF9AF8CCD79D55A5 /* Pods_Lazyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lazyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E9B0386DAA6F51F675E511 /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		C4F1D6431CB25B5313BC86F1 /* Pods_Keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C39C33212EAA69004E6691 /* Lazyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lazyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C39C36212EAA69004E6691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8C39C38212EAA69004E6691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +57,14 @@
 		D8C39C3D212EAA6A004E6691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8C39C40212EAA6A004E6691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C39C42212EAA6A004E6691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C39C4C212EAA88004E6691 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C39C4E212EAA88004E6691 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		D8C39C50212EAA88004E6691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C39C58212EB02B004E6691 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
+		D8C39C5A212EB04E004E6691 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		D8C39C5C212EB9DE004E6691 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		DFFEACBB9E56E9D6851295E6 /* Pods-Lazyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lazyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lazyboard/Pods-Lazyboard.release.xcconfig"; sourceTree = "<group>"; };
+		E7859BCC5AE7AFB7ED2B78C8 /* Pods-Lazyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lazyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lazyboard/Pods-Lazyboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +72,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5789AD1765AEED63F13F23 /* Pods_Lazyboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C39C49212EAA88004E6691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC8CB53C0250C16372984B7 /* Pods_Keyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E133444EE089BED11A4FAE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1E9B0386DAA6F51F675E511 /* Pods-Keyboard.debug.xcconfig */,
+				953F7E2194C4D273C5D54163 /* Pods-Keyboard.release.xcconfig */,
+				E7859BCC5AE7AFB7ED2B78C8 /* Pods-Lazyboard.debug.xcconfig */,
+				DFFEACBB9E56E9D6851295E6 /* Pods-Lazyboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		793CDEA0D6F22325051DD70A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1D6431CB25B5313BC86F1 /* Pods_Keyboard.framework */,
+				976A58AEFF9AF8CCD79D55A5 /* Pods_Lazyboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D8C39C2A212EAA69004E6691 = {
 			isa = PBXGroup;
 			children = (
 				D8C39C35212EAA69004E6691 /* Lazyboard */,
+				D8C39C4D212EAA88004E6691 /* Keyboard */,
 				D8C39C34212EAA69004E6691 /* Products */,
+				4E133444EE089BED11A4FAE1 /* Pods */,
+				793CDEA0D6F22325051DD70A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				D8C39C33212EAA69004E6691 /* Lazyboard.app */,
+				D8C39C4C212EAA88004E6691 /* Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +140,18 @@
 			path = Lazyboard;
 			sourceTree = "<group>";
 		};
+		D8C39C4D212EAA88004E6691 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D8C39C5C212EB9DE004E6691 /* LeftAlignedCollectionViewFlowLayout.swift */,
+				D8C39C4E212EAA88004E6691 /* KeyboardViewController.swift */,
+				D8C39C58212EB02B004E6691 /* KeyCell.swift */,
+				D8C39C5A212EB04E004E6691 /* UIView+Layout.swift */,
+				D8C39C50212EAA88004E6691 /* Info.plist */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,18 +159,39 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8C39C45212EAA6A004E6691 /* Build configuration list for PBXNativeTarget "Lazyboard" */;
 			buildPhases = (
+				E691FDE1487BD90817C74CDC /* [CP] Check Pods Manifest.lock */,
 				D8C39C2F212EAA69004E6691 /* Sources */,
 				D8C39C30212EAA69004E6691 /* Frameworks */,
 				D8C39C31212EAA69004E6691 /* Resources */,
+				D8C39C57212EAA88004E6691 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D8C39C52212EAA88004E6691 /* PBXTargetDependency */,
 			);
 			name = Lazyboard;
 			productName = Lazyboard;
 			productReference = D8C39C33212EAA69004E6691 /* Lazyboard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D8C39C4B212EAA88004E6691 /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C39C54212EAA88004E6691 /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				A6A8D31198AA7E83B4B007AF /* [CP] Check Pods Manifest.lock */,
+				D8C39C48212EAA88004E6691 /* Sources */,
+				D8C39C49212EAA88004E6691 /* Frameworks */,
+				D8C39C4A212EAA88004E6691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard;
+			productName = Keyboard;
+			productReference = D8C39C4C212EAA88004E6691 /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +204,9 @@
 				ORGANIZATIONNAME = Joe;
 				TargetAttributes = {
 					D8C39C32212EAA69004E6691 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					D8C39C4B212EAA88004E6691 = {
 						CreatedOnToolsVersion = 9.4;
 					};
 				};
@@ -113,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				D8C39C32212EAA69004E6691 /* Lazyboard */,
+				D8C39C4B212EAA88004E6691 /* Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -128,7 +241,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8C39C4A212EAA88004E6691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6A8D31198AA7E83B4B007AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Keyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E691FDE1487BD90817C74CDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lazyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8C39C2F212EAA69004E6691 /* Sources */ = {
@@ -140,7 +299,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8C39C48212EAA88004E6691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C39C5D212EB9DE004E6691 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
+				D8C39C4F212EAA88004E6691 /* KeyboardViewController.swift in Sources */,
+				D8C39C59212EB02B004E6691 /* KeyCell.swift in Sources */,
+				D8C39C5B212EB04E004E6691 /* UIView+Layout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8C39C52212EAA88004E6691 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8C39C4B212EAA88004E6691 /* Keyboard */;
+			targetProxy = D8C39C51212EAA88004E6691 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D8C39C3A212EAA69004E6691 /* Main.storyboard */ = {
@@ -278,15 +456,14 @@
 		};
 		D8C39C46212EAA6A004E6691 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7859BCC5AE7AFB7ED2B78C8 /* Pods-Lazyboard.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8CE5P8P3Y;
 				INFOPLIST_FILE = Lazyboard/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aidevjoe.Lazyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,17 +473,48 @@
 		};
 		D8C39C47212EAA6A004E6691 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFFEACBB9E56E9D6851295E6 /* Pods-Lazyboard.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8CE5P8P3Y;
 				INFOPLIST_FILE = Lazyboard/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aidevjoe.Lazyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8C39C55212EAA88004E6691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1E9B0386DAA6F51F675E511 /* Pods-Keyboard.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8CE5P8P3Y;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidevjoe.Lazyboard.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8C39C56212EAA88004E6691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 953F7E2194C4D273C5D54163 /* Pods-Keyboard.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8CE5P8P3Y;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidevjoe.Lazyboard.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,6 +537,15 @@
 			buildConfigurations = (
 				D8C39C46212EAA6A004E6691 /* Debug */,
 				D8C39C47212EAA6A004E6691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C39C54212EAA88004E6691 /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C39C55212EAA88004E6691 /* Debug */,
+				D8C39C56212EAA88004E6691 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
